@@ -87,14 +87,6 @@ sbot server
 npm run dev
 ```
 
-## Keyboard shortcuts
-`CmdOrCtrl` is the `command` key on Apple keyboards or the `ctrl` key on PC keyboards.
-
-### Tabs and Window
-- `CmdOrCtrl+Shift+]` and `CmdOrCtrl+Shift+[` will cycle the tabs left and right
-- `CmdOrCtrl+w` will close the current tab
-- `CmdOrCtrl+Shift+w` will close the current window
-
 ## How to add a feature
 
 To add a new message type, add add a js to `./modules/` that exports a function named `message_content` (it should return an HTML element). To add a new tab, export a function named `screen_view` (returns an html element).
@@ -106,27 +98,34 @@ See the code for more examples.
 
 ## Keyboard shortcuts
 
+`CmdOrCtrl` is the `command` key on Apple keyboards or the `ctrl` key on PC keyboards.
+
+## Windows
+
+- `CmdOrCtrl+Shift+w` will close the current tab
+
 ## Tabs 
 
-`h` : tabs left
-`l` : tabs right
-`x` : close tab
+- `h` or `CmdOrCtrl+Shift+[` : tabs left
+- `l` or `CmdOrCtrl+Shift+]` : tabs right
+- `x` or `CmdOrCtrl+w` : close tab
+
 
 ## Message feeds
 
-`j` : next message (down)
-`k` : previous message
-`o` : open message thread (and scroll to position of this message in that thread)
-` ` ` : toggle raw message view for currently selected message (` ` ` = backtick, lives on the same key as `~`)
+- `j` : next message (down)
+- `k` : previous message
+- `o` : open message thread (and scroll to position of this message in that thread)
+- ` ` ` : toggle raw message view for currently selected message (` ` ` = backtick, lives on the same key as `~`)
 
-composing : cttrl + enter = post
+composing : ctrl + enter = post
 
 ## Nav bar thing
 
-`@` : start a person query
-`#` : start a channel query
-`?` : start a search query
-`/` : start a navigation  (e.g. /public)  - need to re-instate suggestions for this
+- `@` : start a person query
+- `#` : start a channel query
+- `?` : start a search query
+- `/` : start a navigation  (e.g. /public)  - need to re-instate suggestions for this
 
 you can also paste a message id (starts with `%`) in here to navigate to it. Same with blobs (`&`)
 
