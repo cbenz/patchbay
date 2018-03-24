@@ -109,7 +109,7 @@ See the code for more examples.
 ## Tabs 
 
 `h` : tabs left
-`j` : tabs right
+`l` : tabs right
 `x` : close tab
 
 ## Message feeds
